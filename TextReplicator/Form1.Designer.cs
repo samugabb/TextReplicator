@@ -37,6 +37,7 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnAIO = new MaterialSkin.Controls.MaterialButton();
+            this.checkBoxENTER = new MaterialSkin.Controls.MaterialCheckbox();
             this.SuspendLayout();
             // 
             // btnGo
@@ -70,7 +71,7 @@
             this.sliderTime.Name = "sliderTime";
             this.sliderTime.RangeMax = 10;
             this.sliderTime.RangeMin = 1;
-            this.sliderTime.Size = new System.Drawing.Size(501, 40);
+            this.sliderTime.Size = new System.Drawing.Size(301, 40);
             this.sliderTime.TabIndex = 3;
             this.sliderTime.Text = "wait time";
             this.sliderTime.UseAccentColor = true;
@@ -159,13 +160,32 @@
             this.btnAIO.UseVisualStyleBackColor = true;
             this.btnAIO.Click += new System.EventHandler(this.btnAIO_Click);
             // 
+            // checkBoxENTER
+            // 
+            this.checkBoxENTER.AutoSize = true;
+            this.checkBoxENTER.Checked = true;
+            this.checkBoxENTER.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxENTER.Depth = 0;
+            this.checkBoxENTER.Location = new System.Drawing.Point(317, 133);
+            this.checkBoxENTER.Margin = new System.Windows.Forms.Padding(0);
+            this.checkBoxENTER.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.checkBoxENTER.MouseState = MaterialSkin.MouseState.HOVER;
+            this.checkBoxENTER.Name = "checkBoxENTER";
+            this.checkBoxENTER.ReadOnly = false;
+            this.checkBoxENTER.Ripple = true;
+            this.checkBoxENTER.Size = new System.Drawing.Size(206, 37);
+            this.checkBoxENTER.TabIndex = 8;
+            this.checkBoxENTER.Text = "press ENTER afterwards";
+            this.checkBoxENTER.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(526, 179);
-            this.Controls.Add(this.btnAIO);
             this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.checkBoxENTER);
+            this.Controls.Add(this.btnAIO);
             this.Controls.Add(this.textBoxText);
             this.Controls.Add(this.btnHideShow);
             this.Controls.Add(this.sliderTime);
@@ -174,7 +194,7 @@
             this.Name = "Form1";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Text Replicator v2";
+            this.Text = "Text Replicator v3";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
@@ -191,6 +211,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.NotifyIcon notifyIcon;
         private MaterialSkin.Controls.MaterialButton btnAIO;
+        private MaterialSkin.Controls.MaterialCheckbox checkBoxENTER;
     }
 }
 

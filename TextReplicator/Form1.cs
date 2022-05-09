@@ -75,10 +75,15 @@ namespace TextReplicator
         {
             SendKeys.Send(textBoxText.Text); // write the textBox contents
 
+            if (checkBoxENTER.Checked)
+                SendKeys.Send("{Enter}");
+
             sliderTime.Value = TimeToWait; // restore the sliderTime value back to the one that was set before
             sliderTime.Text = "wait time"; // restore the sliderTime text
             sliderTime.UseAccentColor = true; // restore its colors
             sliderTime.Enabled = true; // re-enable user interaction
+
+            this.Hide();
         }
 
         private void btnHideShow_Click(object sender, EventArgs e)
