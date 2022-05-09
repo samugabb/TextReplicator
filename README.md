@@ -21,3 +21,5 @@ There are just a couple options:
 
 - If you want to keep the program open, just minimize it and it will hide in the system tray, as a Notify Icon. Double click the Icon to open the form again.
   You can also open the form (or close the program) by right-clicking the icon in the system tray and using the menu
+- If you want to get the contents directly from the text you copied, without pasting it in the TextBox first, just press "COPY FROM CLIPBOARD AND GO"
+- You can disable the function that sends the ENTER key at the end of the text, by disabling the "press ENTER afterwards" checkbox
