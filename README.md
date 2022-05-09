@@ -1,5 +1,6 @@
 # TextReplicator
 ![immagine](https://user-images.githubusercontent.com/9076972/167411490-0c86532a-65e3-4fd3-b0bd-a7acda90d9e2.png)
+
 This simple application is made for when you have to copy and paste a long string, but the receiving part does not accept pasting.
 For example, if you have to input a very complex password into a remote machine and Clipboard Sharing is not enabled for security reasons.
 
